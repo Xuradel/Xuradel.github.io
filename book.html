@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a table</title>
+    <meta name="description" content="Webpage for the Little Lemon restaurant.">
+    <meta name="author" content="Little Lemon restaurant">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="Banner1.png" >
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="book.html">Book</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="form">
+            <article>
+        <form method="POST" id="contact-form">
+            <div>
+                <label for="first_name">First name</label><br>
+                <p></p>
+                <input type="text" id="first_name" name="first_name" required>
+            </div>
+            <div>
+                <label for="booking_date">Booking Date</label>
+                <p></p>
+                <input type="date" id="booking_date" name="booking_date" required>
+              </div>
+              <div>
+                <label for="booking_people">Number of people</label>
+                <input type="range" id="booking_people" name="booking_people" min="1" max="10" value="4"
+                oninput="this.nextElementSibling.value = this.value"> 
+                <output class="people">4</output>
+                <p></p>
+                <p></p>
+              </div>
+              <div>
+                <label for="booking_location">Location</label>
+                <p></p>
+                <input id="booking_location" name="booking_location" list="locations" required>
+                <datalist id="locations">
+                  <option value="Downtown"></option>
+                  <option value="Uptown"></option>
+                </datalist>
+               </div>
+              <div>      
+                <button type="submit">Submit</button>     
+              </div>
+            </article>
+
+        </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="little_logo">
+            <img src="Name2.png">
+        </div>
+        <div class="copyright">
+            <p>Copyright Little Lemon</p>
+        </div>
+    </footer>
+</body>
+</html>
