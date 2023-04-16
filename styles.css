@@ -1,0 +1,479 @@
+@font-face {
+    font-family: "CoffeeBreak";
+    src: url(fonts/Coffeebreak.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "BeautyDiary";
+    src: url(fonts/BeautyDiary.otf) format('truetype');
+}
+
+@font-face {
+    font-family: "CoffeeLate";
+    src: url(fonts/Coffee\ Latte.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Kafeine";
+    src: url(fonts/KAFEINE\ Personal\ Use.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Arinoe";
+    src: url(fonts/Arinoe.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Corona";
+    src: url(fonts/CoronaRealDemoRegular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Espresso";
+    src: url(fonts/EspressoDolce.ttf) format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    box-sizing: border-box;
+}
+
+html, body{
+    scroll-behavior: smooth;
+}
+
+header{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: .8rem .8rem 0 .8rem;
+}
+
+header li{
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+}
+
+header a{
+    text-decoration: none;
+    color: aliceblue;
+    margin-right: 1rem;
+    font-family: "Corona";
+    transition: all 0.3s ease 0s;
+    
+}
+
+.logo{
+    margin-right: auto;
+    max-width: 4rem;
+    height: auto;
+}
+
+header a:hover{
+    color:rgb(182, 247, 62);
+}
+
+.container{
+    display:grid;
+    grid-template-rows: 100vh;
+    grid-auto-rows: auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.banner{
+    background: linear-gradient(to right, rgb(0 0 0 / 0.5), rgb( 0 0 0 / 0)),url(logos/cup3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+.title h1{
+    color: aliceblue;
+    font-family: "Kafeine";
+    font-size: 3rem;
+}
+.title  p{
+    font-family: "Espresso";
+    color: aliceblue;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.title a{
+    color: #e2a76c;
+    font-family: "Espresso";
+    font-size: 1.5rem;
+    transition: all 0.3s ease 0s;
+}
+
+.title a:hover{
+    color: #d87614;
+    font-size: 2rem;
+}
+
+.title{
+    display: grid;
+    grid-template-rows: 100vh;
+    align-items: center;
+    justify-items: center;
+    padding: 0 0 0 .5rem;
+}
+
+.promotions{
+    display:flex;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.promotext{
+    align-self: center;
+    padding-left: 2rem;
+    overflow-wrap: break-word;
+}
+
+.promotext p{
+    color: #e2a76c;
+    font-size: 1.3rem;
+    font-family: "Arinoe";
+}
+
+.promotext h1{
+    color: antiquewhite;
+    font-family: "Kafeine";
+}
+
+.promotext h2{
+    color: antiquewhite;
+    font-family: "Kafeine";
+}
+
+.promotext a{
+    color: #e2a76c;
+    font-size: 1.3rem;
+    font-family: "Arinoe";
+    transition: all 0.3s ease 0s;
+}
+
+.promotext a:hover{
+    color: #d87614;
+    font-size: 2rem;
+}
+.card{
+    max-width: 50%;
+    max-height: auto;
+    align-self: center;
+    margin-left: 2rem;
+    border-image: linear-gradient(#FBFBFB, #55585D) 30;
+    border-width: 4px;
+    border-style: solid;
+}
+
+.about{
+    display:flex;
+    background-color: #1f3a31;
+    background-image: linear-gradient(to left, #5e5c5c 0%, rgb(24, 23, 23) 100%);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.about h1{
+    color:  #e2a76c;
+    align-self: center;
+    justify-self: center;
+    font-family: "Kafeine";
+}
+
+.about h2{
+    font-size: 1rem;
+    color:  #e2a76c;
+    align-self: center;
+    justify-self: center;
+    font-family: "Kafeine";
+}
+
+.about p{
+    font-family:Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-size: 1rem;
+}
+
+
+.promotext2{
+    align-self: center;
+    padding-left: 2rem;
+    overflow-wrap: break-word;
+}
+
+.card2{
+    max-width: 40%;
+    max-height: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-self: center;
+    border-image: linear-gradient(#6b6d6c, #0c0e0d) 30;
+    border-width: 4px;
+    border-style: solid;
+}
+
+
+.locations{
+    display:flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #807f7f 0%, rgb(44, 42, 42) 100%);
+    background-size: cover;
+    background-position: center;    
+    height: 100vh;
+    width: 100vw;
+}
+
+.promotext3{
+    display: flex;
+    flex-direction: column;
+}
+.locations h1{
+    color: rgb(0, 0, 0);
+    margin-top: 1.5rem;
+    margin-bottom: -1.5rem;
+    font-family:"Kafeine";
+    align-self: center;
+}
+
+.card3{
+    max-width: 50%;
+    height: auto;
+    margin: 2rem 2rem 0;
+    align-self: center;
+    border-image: linear-gradient(#437D6A, #058951) 30;
+    border-width: .25rem;
+    border-style: solid;
+}
+
+.container2{
+   width:100%;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding:0 6rem;
+}
+
+.content-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content-section .cardImage{
+    flex:1;
+    margin:1rem 1rem;
+    box-shadow: 0 .12rem .5rem 0 rgba(0,0,0,0.2);
+}
+
+.content-section img{
+    max-width: 100%;
+    height: auto;
+}
+
+.content-section .cardImage h2{
+margin:.9rem 0;
+font-size: 1.5rem;
+color: #000000;
+font-family: sans-serif;
+}
+
+.content-section .cardImage p{
+font-size: .8rem;
+Line-height: 1.5;
+padding: 0 .6rem;
+margin-bottom: 1rem;
+}
+
+footer{
+    width: 100vw;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    padding-left: .5rem;
+}
+
+.logoC img{
+    max-width: 4rem;
+    height: auto;
+}
+footer .copyright p{
+    font-family:  "Espresso";
+    color:antiquewhite;
+}
+
+footer .socials{
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 600px) {
+    .banner a{
+        font-size: .6rem;
+    }
+    .promotions {
+      flex-direction: column;
+    }
+    .promotext2 p{
+        font-size: .8rem;
+    }
+    .promotext2 h1{
+        font-size: 1rem;
+    }
+    .promotext2 h2{
+        font-size: 1rem;
+    }
+
+    .promotext3 h1{
+        font-size: .8rem;
+    }
+
+    .content-section .cardImage h2{
+        font-size: 1rem;
+        }
+        
+        .content-section .cardImage p{
+        font-size: .8rem;
+        }
+    .about{
+        flex-direction: column;
+    }
+    .card{
+        margin-left: 0;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        align-self: center;
+    }
+
+    .card2{
+        margin: 1rem 0 1rem;
+    }
+
+    .promotext2{
+        margin: 1rem;
+    }
+    .promotext p{
+        font-size: 1rem;
+    }
+    
+    .promotext h1{
+        font-size: 1rem;
+    }
+    
+    .promotext h2{
+        font-size: 1rem;
+    }
+    
+    .promotext a{
+        font-size: 1rem;
+    }
+    .title h1{
+        font-size: 1.8rem;
+    }
+    .title  p{
+        font-size: 1.2rem;
+    }
+    
+    .title a{
+        font-size: 1.2rem;
+    }
+
+    .container2{
+        width:45%;
+        margin-left: 7rem;
+    }
+    footer{
+        flex-direction: column;
+        align-content: center;
+    }
+  }
+
+
+
+.wrapper .button{
+  display: inline-block;
+  height: 2.8rem;
+  width: 2.8rem;
+  margin: 0 .2rem;
+  overflow: hidden;
+  background: #343434;
+  border-radius: 2.75rem;
+  cursor: pointer;
+  box-shadow: 0 .4rem .4rem rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+  width: 8rem;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 2.8rem;
+  width: 2.8rem;
+  text-align: center;
+  border-radius: 2.5rem;
+  box-sizing: border-box;
+  line-height: 2.5rem;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+.wrapper .button:nth-child(4):hover .icon{
+    background: #ff0000;
+  }
+
+.wrapper .button .icon i{
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: .95rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+  margin-left: .3rem;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+  color: #4267B2;
+}
+.wrapper .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+.wrapper .button:nth-child(3) span{
+  color: #E1306C;
+}
+.wrapper .button:nth-child(4) span{
+    color: #ff0000;
+  }
